@@ -1,0 +1,26 @@
+{
+  "name": "playwright-ecommerce-robust",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:workers": "playwright test --workers=1",
+    "smoke": "playwright test --grep @smoke",
+    "sanity": "playwright test --grep @sanity",
+    "regression": "playwright test --grep @regression",
+    "ui": "playwright test --grep @ui",
+    "api": "playwright test --grep @api",
+    "debug": "playwright test --workers=1 --headed",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@azure/identity": "^4.13.3",
+    "@azure/playwright": "^1.1.6",
+    "@playwright/test": "^1.63.0",
+    "dotenv": "^17.4.2",
+    "playwright": "^1.63.0"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^13.2.1"
+  }
+}

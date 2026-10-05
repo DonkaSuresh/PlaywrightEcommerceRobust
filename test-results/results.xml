@@ -1,0 +1,77 @@
+<testsuites id="" name="" tests="10" failures="0" skipped="0" errors="1" time="138.683259">
+<testsuite name="checkout.spec.js" timestamp="2026-10-04T15:12:19.017Z" hostname="chromium" tests="10" failures="0" skipped="0" time="137.051" errors="1">
+<testcase name="Checkout and Orders › @smoke @regression @ui checkout scenario 1" classname="checkout.spec.js" time="16.841">
+</testcase>
+<testcase name="Checkout and Orders › @smoke @regression @ui checkout scenario 2" classname="checkout.spec.js" time="8.471">
+</testcase>
+<testcase name="Checkout and Orders › @smoke @regression @ui checkout scenario 3" classname="checkout.spec.js" time="9.865">
+</testcase>
+<testcase name="Checkout and Orders › @smoke @regression @ui checkout scenario 4" classname="checkout.spec.js" time="11.757">
+</testcase>
+<testcase name="Checkout and Orders › @smoke @regression @ui checkout scenario 5" classname="checkout.spec.js" time="8.754">
+</testcase>
+<testcase name="Checkout and Orders › @smoke @regression @ui checkout scenario 6" classname="checkout.spec.js" time="9.453">
+</testcase>
+<testcase name="Checkout and Orders › @smoke @regression @ui checkout scenario 7" classname="checkout.spec.js" time="7.796">
+</testcase>
+<testcase name="Checkout and Orders › @smoke @regression @ui checkout scenario 8" classname="checkout.spec.js" time="13.916">
+</testcase>
+<testcase name="Checkout and Orders › @smoke @regression @ui checkout scenario 9" classname="checkout.spec.js" time="19.716">
+</testcase>
+<testcase name="Checkout and Orders › @smoke @regression @ui checkout scenario 10" classname="checkout.spec.js" time="30.482">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|checkout-Checkout-and-Orde-b9ff0-ion-ui-checkout-scenario-10-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|checkout-Checkout-and-Orde-b9ff0-ion-ui-checkout-scenario-10-chromium\video.webm]]
+
+[[ATTACHMENT|checkout-Checkout-and-Orde-b9ff0-ion-ui-checkout-scenario-10-chromium\error-context.md]]
+
+[[ATTACHMENT|checkout-Checkout-and-Orde-b9ff0-ion-ui-checkout-scenario-10-chromium\trace.zip]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded." type="Error">
+<![CDATA[  [chromium] › checkout.spec.js:7:5 › Checkout and Orders › @smoke @regression @ui checkout scenario 10 
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "https://rahulshettyacademy.com/client", waiting until "load"
+
+
+       at ..\pageobjects\LoginPage.js:12
+
+      10 |
+      11 |   async goto() {
+    > 12 |     await this.page.goto("/client");
+         |                     ^
+      13 |   }
+      14 |
+      15 |   async login(email, password) {
+        at LoginPage.goto (D:\Full Automation project\PlaywrightEcommerceRobust\pageobjects\LoginPage.js:12:21)
+        at login (D:\Full Automation project\PlaywrightEcommerceRobust\utils\testUtils.js:8:27)
+        at D:\Full Automation project\PlaywrightEcommerceRobust\tests\checkout.spec.js:8:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\checkout-Checkout-and-Orde-b9ff0-ion-ui-checkout-scenario-10-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\checkout-Checkout-and-Orde-b9ff0-ion-ui-checkout-scenario-10-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\checkout-Checkout-and-Orde-b9ff0-ion-ui-checkout-scenario-10-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\checkout-Checkout-and-Orde-b9ff0-ion-ui-checkout-scenario-10-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\checkout-Checkout-and-Orde-b9ff0-ion-ui-checkout-scenario-10-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+</testsuites>
